@@ -9,6 +9,10 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    @IBOutlet var userNameField: NSTextField!
+    @IBOutlet var passWordField: NSTextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +26,9 @@ class ViewController: NSViewController {
         }
     }
 
+    @IBAction func loginButtonPressed(sender: AnyObject) {
+        userNameField.window?.makeFirstResponder(nil)
+    }
 
 }
 
