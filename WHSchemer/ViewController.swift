@@ -13,13 +13,14 @@ class ViewController: NSViewController {
     @IBOutlet var userNameField: NSTextField!
     @IBOutlet var passWordField: NSTextField!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let view = self.view as? NSVisualEffectView {
+            // Make view translucent
+            view.blendingMode = .behindWindow
+        }
     }
-
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
