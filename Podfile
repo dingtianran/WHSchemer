@@ -5,5 +5,5 @@ target 'WHSchemer' do
   use_frameworks!
 
   # Pods for WHSchemer
-
+  pod 'Alamofire', '~> 4.2.0'
 end

@@ -843,16 +843,15 @@
                                         <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R8g-FL-aTf">
                                             <rect key="frame" x="20" y="126" width="142" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="4Le-te-B7R">
+                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="5" id="4Le-te-B7R">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                <objectValues>
-                                                    <string>Item 1</string>
-                                                    <string>Item 2</string>
-                                                    <string>Item 3</string>
-                                                </objectValues>
                                             </comboBoxCell>
+                                            <connections>
+                                                <outlet property="dataSource" destination="XfG-lQ-9wD" id="vAn-pi-ny0"/>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="Qqe-nM-5Az"/>
+                                            </connections>
                                         </comboBox>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IxX-eL-2ar">
                                             <rect key="frame" x="20" y="105" width="80" height="17"/>
@@ -912,16 +911,15 @@
                                         <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jpy-y0-5ef">
                                             <rect key="frame" x="20" y="389" width="142" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="njZ-QL-Vv2">
+                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="5" id="njZ-QL-Vv2">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                <objectValues>
-                                                    <string>Item 1</string>
-                                                    <string>Item 2</string>
-                                                    <string>Item 3</string>
-                                                </objectValues>
                                             </comboBoxCell>
+                                            <connections>
+                                                <outlet property="dataSource" destination="XfG-lQ-9wD" id="DpM-gJ-g5L"/>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="hx8-Yg-TLH"/>
+                                            </connections>
                                         </comboBox>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JcD-JZ-3Dy">
                                             <rect key="frame" x="20" y="368" width="90" height="17"/>
@@ -1038,10 +1036,21 @@
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRR-bQ-blE">
+                                <rect key="frame" x="548" y="372" width="201" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="One Ring To Rule Them All" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pAF-Xs-glk">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="countryBirthBox" destination="R8g-FL-aTf" id="Sfd-4A-2y1"/>
+                        <outlet property="genderBox" destination="fg4-3w-g8J" id="aAG-oP-7Hg"/>
                         <outlet property="passWordField" destination="45X-XV-2jT" id="lCN-BM-8fA"/>
+                        <outlet property="personalCountryBox" destination="jpy-y0-5ef" id="qov-1w-fdu"/>
                         <outlet property="userNameField" destination="5rf-RA-9ro" id="r9a-jg-Q2i"/>
                     </connections>
                 </viewController>
