@@ -1,5 +1,11 @@
 # WHSchemer
 
+![ready](https://img.shields.io/badge/Ready-No-red.svg?style=flat)
+![platform-macOS](https://img.shields.io/badge/platform-macOS-blue.svg?style=flat)
+![swift3](https://img.shields.io/badge/swift3-compatible-green.svg?style=flat)
+![Cocoapods](https://img.shields.io/badge/pod-compatible-brightgreen.svg?style=flat)
+![gplv3](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat)
+
 ## What is WHSchemer
 
 Utility for Applying Working Holiday Visa of New Zealand

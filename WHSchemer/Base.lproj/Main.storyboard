@@ -737,7 +737,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xta-xj-6Ec">
                                 <rect key="frame" x="141" y="438" width="51" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="😵" id="gzf-WT-CYd">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" refusesFirstResponder="YES" sendsActionOnEndEditing="YES" alignment="center" title="😵" id="gzf-WT-CYd">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1049,6 +1049,7 @@
                     <connections>
                         <outlet property="countryBirthBox" destination="R8g-FL-aTf" id="Sfd-4A-2y1"/>
                         <outlet property="genderBox" destination="fg4-3w-g8J" id="aAG-oP-7Hg"/>
+                        <outlet property="loginStatus" destination="xta-xj-6Ec" id="TxL-FT-jqp"/>
                         <outlet property="passWordField" destination="45X-XV-2jT" id="lCN-BM-8fA"/>
                         <outlet property="personalCountryBox" destination="jpy-y0-5ef" id="qov-1w-fdu"/>
                         <outlet property="userNameField" destination="5rf-RA-9ro" id="r9a-jg-Q2i"/>

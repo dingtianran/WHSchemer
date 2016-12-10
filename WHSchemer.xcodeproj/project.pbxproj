@@ -11,6 +11,7 @@
 		262CB2BB1DD0591F008DF835 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262CB2B91DD0591F008DF835 /* Crashlytics.framework */; };
 		26642B791DF968DD00AC8156 /* Countries.swift in Resources */ = {isa = PBXBuildFile; fileRef = 26642B781DF968DD00AC8156 /* Countries.swift */; };
 		26642B7A1DF96DF600AC8156 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26642B781DF968DD00AC8156 /* Countries.swift */; };
+		26642B7C1DFB882A00AC8156 /* NetworkingToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26642B7B1DFB882A00AC8156 /* NetworkingToolbox.swift */; };
 		267BF20E1DCDF5B500AD4342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267BF20D1DCDF5B500AD4342 /* AppDelegate.swift */; };
 		267BF2101DCDF5B500AD4342 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267BF20F1DCDF5B500AD4342 /* ViewController.swift */; };
 		267BF2121DCDF5B600AD4342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267BF2111DCDF5B600AD4342 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		262CB2B81DD0591F008DF835 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		262CB2B91DD0591F008DF835 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		26642B781DF968DD00AC8156 /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		26642B7B1DFB882A00AC8156 /* NetworkingToolbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingToolbox.swift; sourceTree = "<group>"; };
 		267BF20A1DCDF5B500AD4342 /* WHSchemer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WHSchemer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267BF20D1DCDF5B500AD4342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		267BF20F1DCDF5B500AD4342 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				267BF20D1DCDF5B500AD4342 /* AppDelegate.swift */,
 				267BF20F1DCDF5B500AD4342 /* ViewController.swift */,
 				26642B781DF968DD00AC8156 /* Countries.swift */,
+				26642B7B1DFB882A00AC8156 /* NetworkingToolbox.swift */,
 				267BF2111DCDF5B600AD4342 /* Assets.xcassets */,
 				267BF2131DCDF5B600AD4342 /* Main.storyboard */,
 				267BF2161DCDF5B600AD4342 /* Info.plist */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26642B7A1DF96DF600AC8156 /* Countries.swift in Sources */,
+				26642B7C1DFB882A00AC8156 /* NetworkingToolbox.swift in Sources */,
 				267BF2101DCDF5B500AD4342 /* ViewController.swift in Sources */,
 				267BF20E1DCDF5B500AD4342 /* AppDelegate.swift in Sources */,
 			);

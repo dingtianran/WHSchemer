@@ -8,10 +8,11 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSComboBoxDataSource {
+class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate {
     
     @IBOutlet var userNameField: NSTextField!
     @IBOutlet var passWordField: NSTextField!
+    @IBOutlet var loginStatus: NSTextField!
     @IBOutlet var genderBox: NSComboBox!
     @IBOutlet var countryBirthBox: NSComboBox!
     @IBOutlet var personalCountryBox: NSComboBox!
@@ -53,5 +54,14 @@ class ViewController: NSViewController, NSComboBoxDataSource {
     }
     
     //MARK: - NSComboBoxDelegate
+    func comboBoxSelectionDidChange(_ notification: Notification) {
+        if let comboBox = notification.object as? NSComboBox {
+            if comboBox == countryBirthBox {
+                
+            } else if comboBox == personalCountryBox {
+                
+            }
+        }
+    }
 }
 
