@@ -16,7 +16,7 @@
 		267BF2101DCDF5B500AD4342 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267BF20F1DCDF5B500AD4342 /* ViewController.swift */; };
 		267BF2121DCDF5B600AD4342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267BF2111DCDF5B600AD4342 /* Assets.xcassets */; };
 		267BF2151DCDF5B600AD4342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267BF2131DCDF5B600AD4342 /* Main.storyboard */; };
-		9CEC78A3B407B9F3AEA0729C /* Pods_WHSchemer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59001FBC2D34551EF205D8A /* Pods_WHSchemer.framework */; };
+		26C4D9401E00052D00A7AAAD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C4D93D1E00015900A7AAAD /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,7 @@
 		267BF2111DCDF5B600AD4342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		267BF2141DCDF5B600AD4342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		267BF2161DCDF5B600AD4342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		466FC3EE68E1E5516C1B88C3 /* Pods-WHSchemer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHSchemer.release.xcconfig"; path = "Pods/Target Support Files/Pods-WHSchemer/Pods-WHSchemer.release.xcconfig"; sourceTree = "<group>"; };
-		B59001FBC2D34551EF205D8A /* Pods_WHSchemer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WHSchemer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE0EEF6D88CBEDCBBC65FA8C /* Pods-WHSchemer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHSchemer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WHSchemer/Pods-WHSchemer.debug.xcconfig"; sourceTree = "<group>"; };
+		26C4D93D1E00015900A7AAAD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,9 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CEC78A3B407B9F3AEA0729C /* Pods_WHSchemer.framework in Frameworks */,
 				262CB2BB1DD0591F008DF835 /* Crashlytics.framework in Frameworks */,
 				262CB2BA1DD0591F008DF835 /* Fabric.framework in Frameworks */,
+				26C4D9401E00052D00A7AAAD /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +53,6 @@
 			children = (
 				267BF20C1DCDF5B500AD4342 /* WHSchemer */,
 				267BF20B1DCDF5B500AD4342 /* Products */,
-				5F0ED8A84440E2ACF91936C5 /* Pods */,
 				65A60E860999D1FC7D5B6796 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -83,21 +80,12 @@
 			path = WHSchemer;
 			sourceTree = "<group>";
 		};
-		5F0ED8A84440E2ACF91936C5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EE0EEF6D88CBEDCBBC65FA8C /* Pods-WHSchemer.debug.xcconfig */,
-				466FC3EE68E1E5516C1B88C3 /* Pods-WHSchemer.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		65A60E860999D1FC7D5B6796 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26C4D93D1E00015900A7AAAD /* Alamofire.framework */,
 				262CB2B81DD0591F008DF835 /* Fabric.framework */,
 				262CB2B91DD0591F008DF835 /* Crashlytics.framework */,
-				B59001FBC2D34551EF205D8A /* Pods_WHSchemer.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,12 +97,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 267BF2191DCDF5B600AD4342 /* Build configuration list for PBXNativeTarget "WHSchemer" */;
 			buildPhases = (
-				018D30C3594D46828D725D64 /* [CP] Check Pods Manifest.lock */,
 				267BF2061DCDF5B500AD4342 /* Sources */,
 				267BF2071DCDF5B500AD4342 /* Frameworks */,
 				267BF2081DCDF5B500AD4342 /* Resources */,
-				FC934EA896D90EA204EB1A7C /* [CP] Embed Pods Frameworks */,
-				B76992577DDFB792DFBFF460 /* [CP] Copy Pods Resources */,
 				262CB2B71DD058E1008DF835 /* Fabric */,
 			);
 			buildRules = (
@@ -183,21 +168,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		018D30C3594D46828D725D64 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		262CB2B71DD058E1008DF835 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,36 +181,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run be61a92c6eeedde019b6c6a1502771384b84edf2 e8f1aa53e9da5909293c325c310554e322c524039b055c5d4c792e54785de67b";
-		};
-		B76992577DDFB792DFBFF460 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WHSchemer/Pods-WHSchemer-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FC934EA896D90EA204EB1A7C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WHSchemer/Pods-WHSchemer-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -364,7 +304,6 @@
 		};
 		267BF21A1DCDF5B600AD4342 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE0EEF6D88CBEDCBBC65FA8C /* Pods-WHSchemer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WHSchemer/WHSchemer.entitlements;
@@ -375,18 +314,18 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = WHSchemer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iDing.WHSchemer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		267BF21B1DCDF5B600AD4342 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 466FC3EE68E1E5516C1B88C3 /* Pods-WHSchemer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WHSchemer/WHSchemer.entitlements;
@@ -396,12 +335,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = WHSchemer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iDing.WHSchemer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0.1;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
