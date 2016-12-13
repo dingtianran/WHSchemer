@@ -101,6 +101,7 @@
 				267BF2071DCDF5B500AD4342 /* Frameworks */,
 				267BF2081DCDF5B500AD4342 /* Resources */,
 				262CB2B71DD058E1008DF835 /* Fabric */,
+				26C4D9411E00074800A7AAAD /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -181,6 +182,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run be61a92c6eeedde019b6c6a1502771384b84edf2 e8f1aa53e9da5909293c325c310554e322c524039b055c5d4c792e54785de67b";
+		};
+		26C4D9411E00074800A7AAAD /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/Mac/Alamofire.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
