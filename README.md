@@ -10,6 +10,14 @@
 
 Utility for Applying Working Holiday Visa of New Zealand
 
+![WHSchemer](.github/screenshot.jpg)
+
+## Getting Started
+
+1. Clone this repository.
+1. Run `carthage update --platform macOS` to install dependencies.
+1. Build and run via Xcode.
+
 ## License
 
 Copyright (C) 2016 Tianran Ding <dingtianran@gmail.com>
