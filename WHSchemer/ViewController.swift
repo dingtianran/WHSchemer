@@ -41,6 +41,8 @@ class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
         userNameField.window?.makeFirstResponder(nil)
+        passWordField.window?.makeFirstResponder(nil)
+        WHVNetworking.loginAs(username: userNameField.stringValue, password: passWordField.stringValue)
     }
     
     //MARK: - NSComboBoxDataSource
