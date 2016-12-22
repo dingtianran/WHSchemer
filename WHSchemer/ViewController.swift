@@ -16,6 +16,15 @@ class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate
     @IBOutlet var genderBox: NSComboBox!
     @IBOutlet var countryBirthBox: NSComboBox!
     @IBOutlet var personalCountryBox: NSComboBox!
+    //credit card info
+    @IBOutlet var crd1Field: NSTextField!
+    @IBOutlet var crd2Field: NSTextField!
+    @IBOutlet var crd3Field: NSTextField!
+    @IBOutlet var crd4Field: NSTextField!
+    @IBOutlet var vd1Field: NSTextField!
+    @IBOutlet var vd2Field: NSTextField!
+    @IBOutlet var cvvField: NSTextField!
+    
     let countries: [Country] = {
         var all = Countries.allOf()
         all.sort(by: { (coun1: Country, coun2: Country) -> Bool in
