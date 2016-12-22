@@ -30,6 +30,9 @@ class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate
             // Make view translucent
             view.blendingMode = .behindWindow
         }
+        
+        WHVNetworking.setup()
+        NotificationCenter.default.addObserver(self, selector: #selector(statusChangeHandler), name: NSNotification.Name(rawValue: kStatusChangedNotification), object: nil)
     }
     
     override func viewWillAppear() {
@@ -37,6 +40,17 @@ class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate
         
         countryBirthBox.reloadData()
         personalCountryBox.reloadData()
+    }
+    
+    func statusChangeHandler(noti: NSNotification) {
+        if Thread.isMainThread == true {
+            print("a")
+        }
+        if WHVNetworking.status != .Outsider {
+            loginStatus.stringValue = "😉"
+        } else {
+            loginStatus.stringValue = "😩"
+        }
     }
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
