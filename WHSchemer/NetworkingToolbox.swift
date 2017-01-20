@@ -88,4 +88,27 @@ class WHVNetworking {
         }
     }
     
+    static func applicationStatusCheck() {
+        
+    }
+    
+    static func applyImmediately() {
+        
+    }
+    
+    static func postPage1Content() {
+        
+    }
+    
+    static func postPage2Content() {
+        
+    }
+    
+    static func postPage3Content() {
+        
+    }
+    
+    static func postPage4Content() {
+        
+    }
 }

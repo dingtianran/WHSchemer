@@ -16,6 +16,7 @@
 		267BF2101DCDF5B500AD4342 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267BF20F1DCDF5B500AD4342 /* ViewController.swift */; };
 		267BF2121DCDF5B600AD4342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267BF2111DCDF5B600AD4342 /* Assets.xcassets */; };
 		267BF2151DCDF5B600AD4342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267BF2131DCDF5B600AD4342 /* Main.storyboard */; };
+		26A5CF531E31F54300D37B5A /* TipPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A5CF521E31F54300D37B5A /* TipPopoverViewController.swift */; };
 		26C4D9401E00052D00A7AAAD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C4D93D1E00015900A7AAAD /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		267BF2111DCDF5B600AD4342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		267BF2141DCDF5B600AD4342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		267BF2161DCDF5B600AD4342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26A5CF521E31F54300D37B5A /* TipPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipPopoverViewController.swift; sourceTree = "<group>"; };
 		26C4D93D1E00015900A7AAAD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 				267BF20D1DCDF5B500AD4342 /* AppDelegate.swift */,
 				267BF20F1DCDF5B500AD4342 /* ViewController.swift */,
 				26642B781DF968DD00AC8156 /* Countries.swift */,
+				26A5CF521E31F54300D37B5A /* TipPopoverViewController.swift */,
 				26642B7B1DFB882A00AC8156 /* NetworkingToolbox.swift */,
 				267BF2111DCDF5B600AD4342 /* Assets.xcassets */,
 				267BF2131DCDF5B600AD4342 /* Main.storyboard */,
@@ -206,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26642B7A1DF96DF600AC8156 /* Countries.swift in Sources */,
+				26A5CF531E31F54300D37B5A /* TipPopoverViewController.swift in Sources */,
 				26642B7C1DFB882A00AC8156 /* NetworkingToolbox.swift in Sources */,
 				267BF2101DCDF5B500AD4342 /* ViewController.swift in Sources */,
 				267BF20E1DCDF5B500AD4342 /* AppDelegate.swift in Sources */,

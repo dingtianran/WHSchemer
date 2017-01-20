@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate {
+class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate, NSPopoverDelegate {
     
     @IBOutlet var userNameField: NSTextField!
     @IBOutlet var passWordField: NSTextField!
@@ -24,6 +24,11 @@ class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate
     @IBOutlet var vd1Field: NSTextField!
     @IBOutlet var vd2Field: NSTextField!
     @IBOutlet var cvvField: NSTextField!
+    
+    var detachedWindow: NSWindow?
+    var detachedHUDWindow: NSPanel?
+    var creditPopover = NSPopover()
+    var popOverVC: TipPopoverViewController!
     
     let countries: [Country] = {
         var all = Countries.allOf()
@@ -42,6 +47,24 @@ class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate
         
         WHVNetworking.setup()
         NotificationCenter.default.addObserver(self, selector: #selector(statusChangeHandler), name: NSNotification.Name(rawValue: kStatusChangedNotification), object: nil)
+        
+        creditPopover.behavior = .transient
+        creditPopover.animates = true
+        popOverVC = self.storyboard?.instantiateController(withIdentifier: "PopoverViewController") as! TipPopoverViewController
+        creditPopover.contentViewController = popOverVC
+        creditPopover.delegate = self
+        
+        let frame = self.popOverVC.view.bounds
+        var mask: NSWindowStyleMask = [.titled, .closable]
+        let rect = NSWindow.contentRect(forFrameRect: frame, styleMask: mask)
+        detachedWindow = NSWindow(contentRect: rect, styleMask: mask, backing: .buffered, defer: true)
+        detachedWindow?.contentViewController = popOverVC
+        detachedWindow?.isReleasedWhenClosed = false
+        
+        mask = [.titled, .closable, .hudWindow, .utilityWindow]
+        detachedHUDWindow = NSPanel(contentRect: rect, styleMask: mask, backing: .buffered, defer: true)
+        detachedHUDWindow?.contentViewController = popOverVC
+        detachedHUDWindow?.isReleasedWhenClosed = false
     }
     
     override func viewWillAppear() {
@@ -52,14 +75,26 @@ class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate
     }
     
     func statusChangeHandler(noti: NSNotification) {
-        if Thread.isMainThread == true {
-            print("a")
-        }
         if WHVNetworking.status != .Outsider {
             loginStatus.stringValue = "😉"
         } else {
             loginStatus.stringValue = "😩"
         }
+    }
+    
+    @IBAction func disclaimerBtnTouchUpInside(sender: AnyObject) {
+        if detachedHUDWindow?.isVisible == true {
+            detachedHUDWindow?.close()
+        }
+        
+        if detachedWindow?.isVisible == true {
+            // popover is already detached to a separate window, so select its window instead
+            detachedWindow?.makeKeyAndOrderFront(self)
+            return;
+        }
+        
+        let targetButton = sender as! NSButton
+        creditPopover.show(relativeTo: targetButton.bounds, of: targetButton, preferredEdge: .maxX)
     }
 
     @IBAction func loginButtonPressed(sender: AnyObject) {
