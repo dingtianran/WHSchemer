@@ -893,14 +893,14 @@
                                 </view>
                             </box>
                             <box fixedFrame="YES" title="Personal" translatesAutoresizingMaskIntoConstraints="NO" id="s4o-SY-PaA">
-                                <rect key="frame" x="234" y="16" width="246" height="466"/>
+                                <rect key="frame" x="234" y="16" width="246" height="436"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="wXd-Vc-kgy">
-                                    <rect key="frame" x="2" y="2" width="242" height="449"/>
+                                    <rect key="frame" x="2" y="2" width="242" height="419"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cp2-vX-2HJ">
-                                            <rect key="frame" x="18" y="421" width="53" height="17"/>
+                                            <rect key="frame" x="18" y="391" width="53" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Country" id="CwY-42-Sw9">
                                                 <font key="font" metaFont="system"/>
@@ -909,7 +909,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jpy-y0-5ef">
-                                            <rect key="frame" x="20" y="389" width="142" height="26"/>
+                                            <rect key="frame" x="20" y="359" width="142" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="5" id="njZ-QL-Vv2">
                                                 <font key="font" metaFont="system"/>
@@ -922,7 +922,7 @@
                                             </connections>
                                         </comboBox>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JcD-JZ-3Dy">
-                                            <rect key="frame" x="20" y="368" width="90" height="17"/>
+                                            <rect key="frame" x="20" y="338" width="90" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Email Address" id="9rU-Fh-zTh">
                                                 <font key="font" metaFont="system"/>
@@ -931,7 +931,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k59-kw-v6e">
-                                            <rect key="frame" x="20" y="338" width="193" height="22"/>
+                                            <rect key="frame" x="20" y="308" width="193" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="d7e-bE-yKg">
                                                 <font key="font" metaFont="system"/>
@@ -940,7 +940,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uqx-EK-eXj">
-                                            <rect key="frame" x="20" y="313" width="110" height="17"/>
+                                            <rect key="frame" x="20" y="283" width="110" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Passport Number" id="i32-fQ-dfb">
                                                 <font key="font" metaFont="system"/>
@@ -949,7 +949,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtq-nM-c0N">
-                                            <rect key="frame" x="20" y="283" width="126" height="22"/>
+                                            <rect key="frame" x="20" y="253" width="126" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="ISM-NK-S3J">
                                                 <font key="font" metaFont="system"/>
@@ -958,7 +958,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aae-2c-NTG">
-                                            <rect key="frame" x="22" y="258" width="131" height="17"/>
+                                            <rect key="frame" x="22" y="228" width="131" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Passport Expire Date" id="vuF-uM-gho">
                                                 <font key="font" metaFont="system"/>
@@ -967,7 +967,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9tn-m4-3EN">
-                                            <rect key="frame" x="20" y="228" width="126" height="22"/>
+                                            <rect key="frame" x="20" y="198" width="126" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="DD-MM-YYYY" drawsBackground="YES" id="WwQ-gF-tdH">
                                                 <font key="font" metaFont="system"/>
@@ -976,7 +976,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNb-e6-82T">
-                                            <rect key="frame" x="20" y="203" width="133" height="17"/>
+                                            <rect key="frame" x="20" y="173" width="133" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Second Type ID Type" id="8eB-Fd-635">
                                                 <font key="font" metaFont="system"/>
@@ -985,7 +985,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V3O-mF-kwH">
-                                            <rect key="frame" x="20" y="171" width="142" height="26"/>
+                                            <rect key="frame" x="20" y="141" width="142" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="84f-fN-ShU">
                                                 <font key="font" metaFont="system"/>
@@ -999,7 +999,7 @@
                                             </comboBoxCell>
                                         </comboBox>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gz2-Mg-OWY">
-                                            <rect key="frame" x="18" y="150" width="199" height="17"/>
+                                            <rect key="frame" x="18" y="120" width="199" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Date You Intend To Travel To NZ" id="MMb-dA-xRD">
                                                 <font key="font" metaFont="system"/>
@@ -1008,7 +1008,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u3e-GB-XPW">
-                                            <rect key="frame" x="20" y="120" width="126" height="22"/>
+                                            <rect key="frame" x="20" y="90" width="126" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="DD-MM-YYYY" drawsBackground="YES" id="Mkv-g5-jtO">
                                                 <font key="font" metaFont="system"/>
@@ -1154,10 +1154,33 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGW-Ru-2Of">
+                                <rect key="frame" x="235" y="511" width="276" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" enabled="NO" sendsActionOnEndEditing="YES" title="Please select your country from the list below" id="VjO-2b-ZKy">
+                                    <font key="font" metaFont="system" size="12"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PDk-Gp-RDJ">
+                                <rect key="frame" x="237" y="469" width="140" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="5" id="OKG-Vb-4Pg">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </comboBoxCell>
+                                <connections>
+                                    <outlet property="dataSource" destination="XfG-lQ-9wD" id="MnZ-Jg-WNP"/>
+                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="WeP-hv-NNG"/>
+                                </connections>
+                            </comboBox>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="countryBirthBox" destination="R8g-FL-aTf" id="Sfd-4A-2y1"/>
+                        <outlet property="countryFromBox" destination="PDk-Gp-RDJ" id="P8T-lP-yid"/>
                         <outlet property="crd1Field" destination="jxs-ZK-ice" id="w44-GD-FvL"/>
                         <outlet property="crd2Field" destination="To0-yz-b4J" id="R3M-4A-Pfm"/>
                         <outlet property="crd3Field" destination="bLM-fN-6q6" id="VY2-DI-mGb"/>
@@ -1202,6 +1225,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="topTitleImage" width="192" height="14.880000114440918"/>
+        <image name="topTitleImage" width="384" height="29.760000228881836"/>
     </resources>
 </document>

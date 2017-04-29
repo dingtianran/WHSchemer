@@ -13,6 +13,7 @@ class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate
     @IBOutlet var userNameField: NSTextField!
     @IBOutlet var passWordField: NSTextField!
     @IBOutlet var loginStatus: NSTextField!
+    @IBOutlet var countryFromBox: NSComboBox!
     @IBOutlet var genderBox: NSComboBox!
     @IBOutlet var countryBirthBox: NSComboBox!
     @IBOutlet var personalCountryBox: NSComboBox!
