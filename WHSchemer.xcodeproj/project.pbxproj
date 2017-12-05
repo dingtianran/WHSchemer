@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		262CB2BA1DD0591F008DF835 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262CB2B81DD0591F008DF835 /* Fabric.framework */; };
-		262CB2BB1DD0591F008DF835 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262CB2B91DD0591F008DF835 /* Crashlytics.framework */; };
 		26642B791DF968DD00AC8156 /* Countries.swift in Resources */ = {isa = PBXBuildFile; fileRef = 26642B781DF968DD00AC8156 /* Countries.swift */; };
 		26642B7A1DF96DF600AC8156 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26642B781DF968DD00AC8156 /* Countries.swift */; };
 		26642B7C1DFB882A00AC8156 /* NetworkingToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26642B7B1DFB882A00AC8156 /* NetworkingToolbox.swift */; };
@@ -22,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		262CB2B61DD0581D008DF835 /* WHSchemer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WHSchemer.entitlements; sourceTree = "<group>"; };
-		262CB2B81DD0591F008DF835 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		262CB2B91DD0591F008DF835 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		26642B781DF968DD00AC8156 /* Countries.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		26642B7B1DFB882A00AC8156 /* NetworkingToolbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingToolbox.swift; sourceTree = "<group>"; };
@@ -41,8 +38,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				262CB2BB1DD0591F008DF835 /* Crashlytics.framework in Frameworks */,
-				262CB2BA1DD0591F008DF835 /* Fabric.framework in Frameworks */,
 				26C4D9401E00052D00A7AAAD /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				26C4D93D1E00015900A7AAAD /* Alamofire.framework */,
-				262CB2B81DD0591F008DF835 /* Fabric.framework */,
 				262CB2B91DD0591F008DF835 /* Crashlytics.framework */,
 			);
 			name = Frameworks;
@@ -103,7 +97,6 @@
 				267BF2061DCDF5B500AD4342 /* Sources */,
 				267BF2071DCDF5B500AD4342 /* Frameworks */,
 				267BF2081DCDF5B500AD4342 /* Resources */,
-				262CB2B71DD058E1008DF835 /* Fabric */,
 				26C4D9411E00074800A7AAAD /* Carthage */,
 			);
 			buildRules = (
@@ -122,12 +115,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Dingtr;
 				TargetAttributes = {
 					267BF2091DCDF5B500AD4342 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9SC758JJ9F;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
@@ -172,20 +166,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		262CB2B71DD058E1008DF835 /* Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Fabric;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run be61a92c6eeedde019b6c6a1502771384b84edf2 e8f1aa53e9da5909293c325c310554e322c524039b055c5d4c792e54785de67b";
-		};
 		26C4D9411E00074800A7AAAD /* Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,7 +219,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -247,7 +229,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -289,7 +275,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -297,7 +285,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -340,7 +332,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iDing.WHSchemer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -361,7 +354,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.iDing.WHSchemer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

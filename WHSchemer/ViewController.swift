@@ -51,18 +51,18 @@ class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate
         
         creditPopover.behavior = .transient
         creditPopover.animates = true
-        popOverVC = self.storyboard?.instantiateController(withIdentifier: "PopoverViewController") as! TipPopoverViewController
+        popOverVC = self.storyboard?.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "PopoverViewController")) as! TipPopoverViewController
         creditPopover.contentViewController = popOverVC
         creditPopover.delegate = self
         
         let frame = self.popOverVC.view.bounds
-        var mask: NSWindowStyleMask = [.titled, .closable]
+        var mask: NSWindow.StyleMask = [NSWindow.StyleMask.titled, NSWindow.StyleMask.closable]
         let rect = NSWindow.contentRect(forFrameRect: frame, styleMask: mask)
         detachedWindow = NSWindow(contentRect: rect, styleMask: mask, backing: .buffered, defer: true)
         detachedWindow?.contentViewController = popOverVC
         detachedWindow?.isReleasedWhenClosed = false
         
-        mask = [.titled, .closable, .hudWindow, .utilityWindow]
+        mask = [NSWindow.StyleMask.titled, NSWindow.StyleMask.closable, NSWindow.StyleMask.hudWindow, NSWindow.StyleMask.utilityWindow]
         detachedHUDWindow = NSPanel(contentRect: rect, styleMask: mask, backing: .buffered, defer: true)
         detachedHUDWindow?.contentViewController = popOverVC
         detachedHUDWindow?.isReleasedWhenClosed = false
@@ -75,7 +75,7 @@ class ViewController: NSViewController, NSComboBoxDataSource, NSComboBoxDelegate
         personalCountryBox.reloadData()
     }
     
-    func statusChangeHandler(noti: NSNotification) {
+    @objc func statusChangeHandler(noti: NSNotification) {
         if WHVNetworking.status != .Outsider {
             loginStatus.stringValue = "😉"
         } else {

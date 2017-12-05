@@ -84,7 +84,6 @@ class WHVNetworking {
         
         Alamofire.request(url, method: .post, parameters: params, encoding: URLEncoding.httpBody, headers: headers).responseString { response in
             print("Success: \(response.result.isSuccess)")
-            print("Response String: \(response.result.value)")
         }
     }
     
